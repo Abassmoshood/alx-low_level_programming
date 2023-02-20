@@ -1,31 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * main - Entry 
- * Return: Always 0
+ * main - This program determines if the
+ * last digit of a random
+ * number is less than or greater than
+ * or is zero
+ * Return: 0 on success
  */
 int main(void)
 {
-	int n;
-	int ai;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	a = n % 10;
-
-	if (n > s)
-	{
-		printf("Last digit of %d is %d and is greater than S\n", n, a);
-	}
-	else if ( == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n", n, a);
-	}
-	else
-	{
-		printf("Last digit of %d is %d and is less than 0 and not 0\n", n, a);
-	}
-	return (0);
+int n;
+char last[] = "Last digit of";
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+printf("%s %d is %d and is ", last, n, n % 10);
+if (n % 10 > 5)
+{
+printf("greater than 5\n");
+}
+else if (n % 10 == 0)
+{
+printf("0\n");
+}
+else
+{
+printf("less than 6 and not 0\n");
+}
+return (0);
 }
